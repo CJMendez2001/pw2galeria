@@ -8,7 +8,7 @@ import handlebars from 'vite-plugin-handlebars';
 import handlerBarsContext from './variables.js';
 
 export default defineConfig({
-    base: "/pw2_galeria/",
+    base: "",
     appType: 'mpa',
     build: {
         rollupOptions: {
