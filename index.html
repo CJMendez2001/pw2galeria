@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTRONICSTORE</title>
+    <link rel="stylesheet" href="less/style.less">
+    
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label class="hamburger" for="check">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <section class="branding">
+            <img src="public/Logo.png" alt="logo">
+            <h1>ELECTRONICSTORE</h1>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Gaming</a></li>
+                <li><a href="#">Computación</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="/public/gaming.jpg" media="(min-width: 1024px)">
+                <source srcset="/public/gaming.jpg" media="(min-width: 720px)">
+                <img src="/public/gaming.jpg" alt="ELECTRONICSTORE">
+            </picture>
+            <h2>ELECTRONICSTORE</h2>
+        </section>
+        {{> gallery}}
+    </main>
+    <footer>
+        <p>&copy; 2023 ELECTRONICSTORE</p>
+    </footer>
+</body>
+
+</html>
